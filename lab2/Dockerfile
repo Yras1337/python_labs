@@ -1,4 +1,7 @@
-FROM ubuntu:latest
-LABEL authors="yras1337"
+FROM python
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /home/Python Projects/Python-labs/lab2/
+
+COPY . .
+
+CMD ["/bin/bash"]
